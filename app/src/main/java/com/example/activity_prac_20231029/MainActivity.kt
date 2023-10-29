@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "2번 화면으로 이동", Toast.LENGTH_SHORT).show()
         }
 
-
+        binding.thridBtn.setOnClickListener {
+//            3번 화면으로 이동하는 내용
+//            문구 전달은 아직
+            val myIntent = Intent(this,ThirdActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
