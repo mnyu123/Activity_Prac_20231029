@@ -25,6 +25,14 @@
 
         </EditText>
 
+        <EditText
+            android:id="@+id/edtText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3번 화면에 전달할 숫자 작성">
+
+        </EditText>
+
         <Button
             android:id="@+id/thridBtn"
             android:layout_width="match_parent"
@@ -32,6 +40,10 @@
             android:text="3번 화면으로 메시지 이동시키는 버튼">
 
         </Button>
+
+
+
+
 
 
     </LinearLayout>
