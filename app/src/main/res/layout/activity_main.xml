@@ -41,9 +41,30 @@
 
         </Button>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="전화번호 입력">
 
+        </TextView>
 
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="전화번호를 입력하세요">
 
+        </EditText>
+
+        <Button
+            android:id="@+id/btnPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화걸기">
+
+        </Button>
 
 
     </LinearLayout>

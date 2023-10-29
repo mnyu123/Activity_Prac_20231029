@@ -1,6 +1,7 @@
 package com.example.activity_prac_20231029
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -41,7 +42,19 @@ class MainActivity : AppCompatActivity() {
 //            숫자를 inputNum에 대입
             val inputNum = binding.edtText2.text.toString().toInt()
 
-            myIntent.putExtra("숫자",inputNum)
+            myIntent.putExtra("숫자", inputNum)
+
+            startActivity(myIntent)
+        }
+
+//        전화 걸기 버튼 동작
+        binding.btnPhone.setOnClickListener {
+//            전화 걸기 버튼 이벤트
+            val inputphoneNum = binding.edtPhone.text.toString()
+
+            val myUri = Uri.parse("tel:${inputphoneNum}")
+
+            val myIntent = Intent(Intent.ACTION_DIAL, myUri)
 
             startActivity(myIntent)
         }
