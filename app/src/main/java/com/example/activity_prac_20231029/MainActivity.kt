@@ -25,5 +25,7 @@ class MainActivity : AppCompatActivity() {
 
             Toast.makeText(this, "2번 화면으로 이동", Toast.LENGTH_SHORT).show()
         }
+
+
     }
 }
